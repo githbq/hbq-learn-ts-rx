@@ -1,0 +1,49 @@
+{
+  "name": "learn-rx",
+  "version": "0.0.1",
+  "description": "learn-rx",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node run",
+    "test": "mocha src/**/*.test.ts",
+    "clear": "rimraf build",
+    "tsc": "npm run clear && tsc",
+    "tsc:w": "npm run clear && tsc -w",
+    "p": "npm run tsc && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:githbq/hbq-module-boilerplate.git"
+  },
+  "keywords": [
+    "typescript",
+    "learn-rx"
+  ],
+  "author": "hubiqing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/githbq/hbq-module-boilerplate.git"
+  },
+  "homepage": "git@github.com:githbq/hbq-module-boilerplate.git#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "rx": "^4.1.0",
+    "rx-node": "^1.0.2",
+    "tslib": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.64",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^6.0.48",
+    "@types/rx": "^4.1.1",
+    "@types/rx-node": "^0.0.5",
+    "@types/should": "^8.3.0",
+    "mocha": "^3.3.0",
+    "rimraf": "^2.6.1",
+    "should": "^11.2.1",
+    "ts-node": "^3.0.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.3.2"
+  },
+  "node": ">=7.6"
+}
